@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Home</a>
+    <a class="nav" href="EX3reg_list.html">Registered Students</a>
+</nav>
+<div class = "container py-3">
+    <h1>
+        Registered Students
+    </h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="Name">Name</th>
+            <th scope="Organization">Organization</th>
+          </tr>
+        </thead>
+        {% for x in key_list %}
+        <tbody>
+            <tr>
+              <td>{{ x }}</td>
+              <td>{{ stu_dict[x] }}</td>
+            </tr>
+          </tbody>
+        {% endfor%}
+    </table>
+</div>

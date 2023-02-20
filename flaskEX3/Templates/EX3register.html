@@ -1,0 +1,34 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Home</a>
+    <a class="nav" href="EX3reg_list.html">Registered Students</a>
+</nav>
+<div class = "container py-3">
+    <html>
+        <h1>
+            Register
+        </h1>
+        <p>
+            Use the following form to register for a student organization
+        </p>
+        <div class = "form-group">
+        <form action="/reg_list" method="POST">
+            <label>Name</label><br>
+            <input type = "text" name = "content" id = "content">
+            <br>
+            <label>Organization</label><br>
+            <select name="orgs" id="orgs">
+                <option value="49th Security Division">49th Security Division</option>
+                <option value="Women in Cybersecurity">Women in Cybersecurity</option>
+                <option value="Girls Who Code">Girls Who Code</option>
+                <option value="Association for Computing Machinery">Association for Computing Machinery</option>
+                <option value="Association of Data Scientists">Association of Data Scientists</option>
+              </select><br>
+              <br>
+            <input type = "submit" value="Submit">
+        </form>
+    </div>
+    </html>
+</div>
